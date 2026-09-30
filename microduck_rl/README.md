@@ -181,6 +181,18 @@ Conventions worth knowing:
 rules learned across the project (also aimed at AI coding agents working in
 this repo).
 
+## Included trained policy
+
+The repository includes the final checkpoint and exported ONNX policy from the
+backlash-aware continuation run:
+
+- `models/velocity/microduck_velocity_flat_backlash_2026-09-30.onnx`
+- `models/velocity/microduck_velocity_flat_backlash_2026-09-30.pt`
+
+The ONNX graph was checked as `[1, 61] -> [1, 14]`. Training task:
+`Mjlab-Velocity-Flat-Backlash-MicroDuck`; final iteration `24999/25000`.
+Intermediate checkpoints and training logs are intentionally excluded.
+
 ## Publishing a policy
 
 `uv run publish` puts a policy on the Hugging Face Hub in the shape the robot's

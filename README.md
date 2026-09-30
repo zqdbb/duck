@@ -7,4 +7,4 @@ This repository groups the two official Pollen Robotics MicroDuck projects used 
 
 The main training task is `Mjlab-Velocity-Flat-MicroDuck`. It uses 61 actor observations, 14 joint-position actions, PPO, BAM actuator modeling, and domain randomization for sim-to-real transfer.
 
-The training environment is intentionally not committed. Create it with the instructions in [`microduck_rl/README.md`](microduck_rl/README.md), then keep checkpoints and logs outside Git.
+The training environment is intentionally not committed. Create it with the instructions in [`microduck_rl/README.md`](microduck_rl/README.md). A validated final policy from the September 30, 2026 backlash-aware run is included under [`microduck_rl/models/velocity/`](microduck_rl/models/velocity/); intermediate checkpoints and logs remain outside Git.
